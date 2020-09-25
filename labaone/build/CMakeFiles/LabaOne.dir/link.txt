@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11   CMakeFiles/LabaOne.dir/LabaOne.cpp.o  -o LabaOne  LibCryptographic/libLibCryptographic.a 

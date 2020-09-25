@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.cpp
+LibCryptographic.hpp
+/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+cstdlib
+-
+iostream
+-
+cmath
+-
+map
+-
+
+/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+

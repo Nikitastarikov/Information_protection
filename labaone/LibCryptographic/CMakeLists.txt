@@ -1,0 +1,1 @@
+add_library(LibCryptographic LibCryptographic.cpp)
