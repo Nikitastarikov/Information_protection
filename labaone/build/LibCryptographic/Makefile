@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikita/Study/information_protection/labaone
+CMAKE_SOURCE_DIR = /home/nikita/Study/Information_protection/labaone
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikita/Study/information_protection/labaone/build
+CMAKE_BINARY_DIR = /home/nikita/Study/Information_protection/labaone/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/nikita/Study/information_protection/labaone/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles /home/nikita/Study/information_protection/labaone/build/LibCryptographic/CMakeFiles/progress.marks
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 0
+	cd /home/nikita/Study/Information_protection/labaone/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles /home/nikita/Study/Information_protection/labaone/build/LibCryptographic/CMakeFiles/progress.marks
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/clean
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/preinstall
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/preinstall
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/nikita/Study/information_protection/labaone/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/nikita/Study/Information_protection/labaone/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 LibCryptographic/CMakeFiles/LibCryptographic.dir/rule:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/CMakeFiles/LibCryptographic.dir/rule
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/CMakeFiles/LibCryptographic.dir/rule
 .PHONY : LibCryptographic/CMakeFiles/LibCryptographic.dir/rule
 
 # Convenience name for target.
@@ -122,7 +122,7 @@ LibCryptographic: LibCryptographic/CMakeFiles/LibCryptographic.dir/rule
 
 # fast build rule for target.
 LibCryptographic/fast:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/build
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/build
 .PHONY : LibCryptographic/fast
 
 LibCryptographic.o: LibCryptographic.cpp.o
@@ -131,7 +131,7 @@ LibCryptographic.o: LibCryptographic.cpp.o
 
 # target to build an object file
 LibCryptographic.cpp.o:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.o
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.o
 .PHONY : LibCryptographic.cpp.o
 
 LibCryptographic.i: LibCryptographic.cpp.i
@@ -140,7 +140,7 @@ LibCryptographic.i: LibCryptographic.cpp.i
 
 # target to preprocess a source file
 LibCryptographic.cpp.i:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.i
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.i
 .PHONY : LibCryptographic.cpp.i
 
 LibCryptographic.s: LibCryptographic.cpp.s
@@ -149,7 +149,7 @@ LibCryptographic.s: LibCryptographic.cpp.s
 
 # target to generate assembly for a file
 LibCryptographic.cpp.s:
-	cd /home/nikita/Study/information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.s
+	cd /home/nikita/Study/Information_protection/labaone/build && $(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/LibCryptographic.cpp.s
 .PHONY : LibCryptographic.cpp.s
 
 # Help Target
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/nikita/Study/information_protection/labaone/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/nikita/Study/Information_protection/labaone/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

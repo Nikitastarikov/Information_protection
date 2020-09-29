@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nikita/Study/information_protection/labaone
+CMAKE_SOURCE_DIR = /home/nikita/Study/Information_protection/labaone
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nikita/Study/information_protection/labaone/build
+CMAKE_BINARY_DIR = /home/nikita/Study/Information_protection/labaone/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -96,14 +96,14 @@ LibCryptographic/clean: LibCryptographic/CMakeFiles/LibCryptographic.dir/clean
 CMakeFiles/LabaOne.dir/all: LibCryptographic/CMakeFiles/LibCryptographic.dir/all
 	$(MAKE) -f CMakeFiles/LabaOne.dir/build.make CMakeFiles/LabaOne.dir/depend
 	$(MAKE) -f CMakeFiles/LabaOne.dir/build.make CMakeFiles/LabaOne.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/information_protection/labaone/build/CMakeFiles --progress-num=1,2 "Built target LabaOne"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/Information_protection/labaone/build/CMakeFiles --progress-num=1,2 "Built target LabaOne"
 .PHONY : CMakeFiles/LabaOne.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LabaOne.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/LabaOne.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 0
 .PHONY : CMakeFiles/LabaOne.dir/rule
 
 # Convenience name for target.
@@ -123,14 +123,14 @@ CMakeFiles/LabaOne.dir/clean:
 CMakeFiles/TestLabaOne.dir/all: LibCryptographic/CMakeFiles/LibCryptographic.dir/all
 	$(MAKE) -f CMakeFiles/TestLabaOne.dir/build.make CMakeFiles/TestLabaOne.dir/depend
 	$(MAKE) -f CMakeFiles/TestLabaOne.dir/build.make CMakeFiles/TestLabaOne.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/information_protection/labaone/build/CMakeFiles --progress-num=5,6 "Built target TestLabaOne"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/Information_protection/labaone/build/CMakeFiles --progress-num=5,6 "Built target TestLabaOne"
 .PHONY : CMakeFiles/TestLabaOne.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TestLabaOne.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/TestLabaOne.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 0
 .PHONY : CMakeFiles/TestLabaOne.dir/rule
 
 # Convenience name for target.
@@ -150,14 +150,14 @@ CMakeFiles/TestLabaOne.dir/clean:
 LibCryptographic/CMakeFiles/LibCryptographic.dir/all:
 	$(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/depend
 	$(MAKE) -f LibCryptographic/CMakeFiles/LibCryptographic.dir/build.make LibCryptographic/CMakeFiles/LibCryptographic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/information_protection/labaone/build/CMakeFiles --progress-num=3,4 "Built target LibCryptographic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nikita/Study/Information_protection/labaone/build/CMakeFiles --progress-num=3,4 "Built target LibCryptographic"
 .PHONY : LibCryptographic/CMakeFiles/LibCryptographic.dir/all
 
 # Build rule for subdir invocation for target.
 LibCryptographic/CMakeFiles/LibCryptographic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 LibCryptographic/CMakeFiles/LibCryptographic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/information_protection/labaone/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nikita/Study/Information_protection/labaone/build/CMakeFiles 0
 .PHONY : LibCryptographic/CMakeFiles/LibCryptographic.dir/rule
 
 # Convenience name for target.

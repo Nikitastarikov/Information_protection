@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.cpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic/LibCryptographic.cpp
 LibCryptographic.hpp
-/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic/LibCryptographic.hpp
 cstdlib
 -
 iostream
@@ -18,5 +18,5 @@ cmath
 map
 -
 
-/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic/LibCryptographic.hpp
 

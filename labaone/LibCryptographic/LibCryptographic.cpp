@@ -59,7 +59,7 @@ void evclid_algorithm(long long a, long long b, long long U[3])
 	}
 }
 
-bool isPrime(long long p)
+bool is_prime(long long p)
 {
 	if (p <= 1) return false;
 	 
@@ -71,6 +71,19 @@ bool isPrime(long long p)
 	}     
 	 
    return true;    
+}
+
+long long random_prime_number(long long lower_limit, long long upper_limit) {
+	long long prime_number;
+
+	do {
+	    prime_number = (long long) (rand() % (upper_limit - lower_limit) + lower_limit);
+	    
+	    if (prime_number % 2 == 0) {
+	        prime_number += 1;
+	    }
+	} while (!is_prime(prime_number));
+	return prime_number;
 }
 
 long long baby_step_giant_step(long long y, long long a, long long p, long long m, long long k)

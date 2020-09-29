@@ -8,7 +8,9 @@
 
 ../LibCryptographic/LibCryptographic.hpp
 
-/home/nikita/Study/information_protection/labaone/LabaOne.cpp
+/home/nikita/Study/Information_protection/labaone/LabaOne.cpp
+LibCryptographic.hpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic.hpp
 iostream
 -
 cstdlib
@@ -17,6 +19,6 @@ cmath
 -
 typeinfo
 -
-LibCryptographic.hpp
-/home/nikita/Study/information_protection/labaone/LibCryptographic.hpp
+cstring
+-
 

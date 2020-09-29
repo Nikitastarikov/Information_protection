@@ -1,4 +1,4 @@
-# Install script for directory: /home/nikita/Study/information_protection/labaone/LibCryptographic
+# Install script for directory: /home/nikita/Study/Information_protection/labaone/LibCryptographic
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

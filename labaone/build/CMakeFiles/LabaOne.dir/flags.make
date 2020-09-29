@@ -6,5 +6,5 @@ CXX_FLAGS =  -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nikita/Study/information_protection/labaone/build -I/home/nikita/Study/information_protection/labaone/LibCryptographic 
+CXX_INCLUDES = -I/home/nikita/Study/Information_protection/labaone/build -I/home/nikita/Study/Information_protection/labaone/LibCryptographic 
 

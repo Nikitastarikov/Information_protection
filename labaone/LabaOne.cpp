@@ -1,8 +1,9 @@
+#include "LibCryptographic.hpp"
 #include <iostream>
 #include <cstdlib>
 #include <cmath>
 #include <typeinfo>
-#include "LibCryptographic.hpp"
+#include <cstring>
 
 #define RANGE 1000000000
 using namespace std;
@@ -13,16 +14,17 @@ void Algorithm_0()
 	long long j = rand() % RANGE;
 	long long k = rand() % RANGE + 1;
 
-	cout << "the algorithm of fast exponentiation modulo:" << endl;
+	cout << "The algorithm of fast exponentiation modulo:" << endl << endl;
 	cout << i << "^" << j << " mod " << k << " = " << modulo_multiplication(i, j, k) << endl;
 }
 
 void Algorithm_1()
 {
+	cout << "The algorithm Evclida:" << endl << endl;
+
 	long long a = rand() % RANGE;
 	long long b = rand() % RANGE;
 
-	cout << "the algorithm Evclida:" << endl;
 	cout << "a = " << a << " b = " << b << endl << endl; 
 
 	long long U[3] = {a, 1, 0};
@@ -30,7 +32,7 @@ void Algorithm_1()
 
 	if ((a * U[1] + b * U[2]) == U[0])
 	{
-		cout << "the answer is correct" << endl;
+		//cout << "the answer is correct" << endl;
 		cout << "NOD(" << a << ", " << b << ") = " << U[0] << endl;
 		cout << "x = " << U[1] << endl;
 		cout << "y = " << U[2] << endl;
@@ -43,7 +45,7 @@ void Algorithm_1()
 
 void Algorithm_2()
 {
-	cout << "the algorithm Diffie-Hellman:" << endl;
+	cout << "The algorithm Diffie-Hellman:" << endl << endl;
 
 	long long p = 0;
 	long long q = 0;
@@ -54,18 +56,19 @@ void Algorithm_2()
 	long long Yb = 0;
 	long long Za = 0;
 	long long Zb = 0;
-	
-	do {
-		p = rand() % RANGE + 1;
-		q = rand() % RANGE + 1;
-	} while (!isPrime(p) || !isPrime(q) || (p != (2 * q + 1))); //исправить
 
-	Xa = rand() % (p - 1) + 1;
-	Xb = rand() % (p - 1) + 1;
+	do
+	{
+		q = random_prime_number(1, RANGE);
+		p = 2 * q + 1;
+	} while (!is_prime(p));
 	
 	do {
 		g = rand() % (p - 1) + 2;
 	} while (modulo_multiplication(g, q, p) == 1);
+
+	Xa = rand() % (p - 1) + 1;
+	Xb = rand() % (p - 1) + 1;
 
 	Ya = modulo_multiplication(g, Xa, p);
 	Yb = modulo_multiplication(g, Xb, p);
@@ -73,22 +76,16 @@ void Algorithm_2()
 	Za = modulo_multiplication(Yb, Xa, p);
 	Zb = modulo_multiplication(Ya, Xb, p);
 	
-	cout << "Data public: " << endl;
-	cout << "p = " << p << endl;
-	cout << "q = " << q << endl;
+	cout << "Data public: " << "\t\t\t" << "| Data private: " << endl;
+	cout << "p = " << p << "\t\t\t" << "| Xa = " << Xa << endl;
+	cout << "q = " << q << "\t\t\t" << "| Xb = " << Xb << endl;
 	cout << "Ya = " << Ya << endl;
 	cout << "Yb = " << Yb << endl;
 	cout << "g = " << g << endl << endl;
 
-	cout << "Data private: " << endl;
-	cout << "Xa = " << Xa << endl;
-	cout << "Xb = " << Xb << endl << endl;
-
 	if (Za == Zb)
 	{
-		cout << "the answer is correct" << endl;
-		cout << "Za = " << Za << endl;
-		cout << "Zb = " << Zb << endl;
+		cout << "Za = Zb = " << Za << endl;
 	}
 	else
 	{
@@ -98,27 +95,26 @@ void Algorithm_2()
 
 void Algorithm_3()
 {
-	cout << "the algorithm Baby step, giant step" << endl;
+	cout << "The algorithm Baby step, giant step" << endl << endl;
 
 	long long m = 0;
 	long long k = 0;
-	long long a = rand() % RANGE;
-	long long y = rand() % RANGE;
 	long long p = 0;
 	long long x = 0;
 	long long res_y = 0;
+	long long a = rand() % RANGE;
+	long long y = rand() % RANGE;
 
 	do
 	{
 		p = rand() % RANGE + 1;
-	} while (!isPrime(p) || y >= p);
+	} while (!is_prime(p) || y >= p);
 	
 	m = (long long)sqrt(p) + 1;
 	k = (long long)sqrt(p) + 1;
 
 	cout << a << "^x" << " mod " << p << " = " << y << endl; 
-	cout << "m = " << m << endl;
-	cout << "k = " << k << endl;
+	cout << "m = k = " << m << endl << endl;
 
 	x = baby_step_giant_step(y, a, p, m, k);
 	
@@ -142,7 +138,7 @@ void Algorithm_3()
 int main(int argn, char* argv[])
 {
 
-	if (argn != 2 || !(('0' <= argv[1][0]) && (argv[1][0] <= '3')))
+	if (argn != 2 || strlen(argv[1]) != 1 || !(('0' <= argv[1][0]) && (argv[1][0] <= '3')))
 	{
 		cerr << "there must be 2 arguments" << endl;
 		cerr << "0 - the algorithm of fast exponentiation modulo" << endl;
@@ -155,20 +151,21 @@ int main(int argn, char* argv[])
 	srand(time(nullptr));
 	int NomerAlg = atoi(argv[1]);
 
-	if (NomerAlg == 0)
+	switch (NomerAlg)
 	{
+	case 0:
 		Algorithm_0();
-	}
-	else if (NomerAlg == 1)
-	{
+		break;
+	case 1:
 		Algorithm_1();
-	}
-	else if (NomerAlg == 2)
-	{
+		break;
+	case 2: 
 		Algorithm_2();
-	}
-	else if (NomerAlg == 3)
-	{
+		break;
+	case 3:
 		Algorithm_3();
+		break;
 	}
+
+	return 0;
 }

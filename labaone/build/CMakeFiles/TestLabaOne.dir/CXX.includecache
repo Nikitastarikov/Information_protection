@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic/LibCryptographic.hpp
 
-/home/nikita/Study/information_protection/labaone/Tests/TestLabaOne.cpp
+/home/nikita/Study/Information_protection/labaone/Tests/TestLabaOne.cpp
 catch.hpp
-/home/nikita/Study/information_protection/labaone/Tests/catch.hpp
+/home/nikita/Study/Information_protection/labaone/Tests/catch.hpp
 ../LibCryptographic/LibCryptographic.hpp
-/home/nikita/Study/information_protection/labaone/LibCryptographic/LibCryptographic.hpp
+/home/nikita/Study/Information_protection/labaone/LibCryptographic/LibCryptographic.hpp
 
-/home/nikita/Study/information_protection/labaone/Tests/catch.hpp
+/home/nikita/Study/Information_protection/labaone/Tests/catch.hpp
 TargetConditionals.h
 -
 ciso646
@@ -390,7 +390,7 @@ string
 memory
 -
 Foundation/Foundation.h
-/home/nikita/Study/information_protection/labaone/Tests/Foundation/Foundation.h
+/home/nikita/Study/Information_protection/labaone/Tests/Foundation/Foundation.h
 limits
 -
 set
